@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="729" height="299" viewBox="0 0 729 299">
+  <g id="hero" transform="translate(-989 -356)">
+    <path id="Polygon_2" data-name="Polygon 2" d="M75.5,0,151,145H0Z" transform="translate(1279 358)" fill="#fff"/>
+    <path id="Polygon_3" data-name="Polygon 3" d="M75.5,0,151,145H0Z" transform="translate(1567 362)" fill="#6200ee"/>
+    <path id="Polygon_4" data-name="Polygon 4" d="M75.5,0,151,150H0Z" transform="translate(1567 655) rotate(-180)" fill="#6200ee"/>
+    <path id="Polygon_5" data-name="Polygon 5" d="M75.5,0,151,145H0Z" transform="matrix(-1, 0.017, -0.017, -1, 1288.507, 636.671)" fill="#fff"/>
+    <path id="Polygon_6" data-name="Polygon 6" d="M75.5,0,151,145H0Z" transform="translate(989 356)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rohan Senthil</title>
+        <link rel="stylesheet" href="css/browserpass.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="index.html"><img src="images/rslogo.svg" alt="Home"></a>
+                
+                <img id="mobile-cta" class="mobile-menu" src="images/User_Interface-03-512.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                    <ul class="primary_nav">
+                        <li><a class="title" href="index.html"> <img class="line" src="images/Rectangle 6.svg" alt=""> Projects</a></li>
+                        <li><a class="title" href="index.html"> <img class="line" src="images/Rectangle 6.svg" alt=""> About Me</a></li>
+                        <li><a class="title" href="index.html"> <img class="line" src="images/Rectangle 6.svg" alt=""> Certificates</a></li>
+                        <li><a class="title" href="index.html"> <img class="line" src="images/Rectangle 6.svg" alt=""> Articles</a></li>
+                    </ul>
+
+                    <ul class="social-header">
+                        <li><a href="#"><img src="images/twitterlogo.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="images/iglogo.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="images/utubelogo.svg" alt="Youtube"></a></li>
+                
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="articles" class="articles">
+            <div class="left1">
+                <div class="inner transition6">
+                    <p class="subtitle">Articles</p>
+                    <img class="subtitle-line" src="images/Line 1.svg" alt="">
+                    <p class="featured-title">Why you should never save your
+                        passwords in your browsers</p>
+                    <p class="featured-desc">Have you ever been prompted to save your passwords in your browsers? It happens all the time and most of us probably do save our passwords in our browsers. After all why should we not? It makes access the next time around much easier. Especially if you have long, complex passwords it would save you the hassle of spending time typing it all out and potentially forgetting it. However, even with the convenience it provides, it simply is not worth it.</p>
+                    <p class="subtitle">Here's Why</p>
+                    <p class="featured-desc">The simple reason is that passwords that are saved in your browsers can be viewed extremely easily.  Most browsers like chrome allow users to view their saved passwords without any authentication. Furthermore certain tools only can extract this passwords in an instance and save you the hassle of going through the steps.</p>
+                    <p class="subtitle">Here's How</p>
+                    <p class="featured-desc">A password recovery tool WebBrowserPassView though meant for a good purpose, can used maliciously. For example, It can be installed onto any typical, normal USB Drive and once it is injected into another computer, simply opening the tool in the USB Drive shows all the login details for different websites that are saved in the browsers. They then can be saved in the USB Drive by pressing Ctrl + S. That's extremely easy and anyone can do that. Now that's scary. There are also many various methods that can be found online as well. I even tried this method out on my friend (he was okay with it) and managed to find out many of his login details. I would like to show how it works, however my friend does not want the video (blurred) to be seen so instead,  you can try it out yourself on yourself or others (with their permission, be ethical) and hopefully inform others about the dangers of saving your passwords in your browsers in the process.</p>
+                    <a class="featured-desc" href="https://www.nirsoft.net/utils/web_browser_password.html">Download WebBrowserPassView</a>
+                </div>
+                <a class="view transition6" href="index.html">Back</a>
+            </div>
+        </section>
+
+
+
+        <section class="fotor">
+            <div class="fotor-design">
+                <svg class="hero-design" width="729" height="299" viewBox="0 0 729 299">
+                    <g id="hero" transform="translate(-989 -356)">
+                        <path class="polygon-animation" id="Polygon_2" data-name="Polygon 2" d="M75.5,0,151,145H0Z" transform="translate(1279 358)" fill="#fff"/>
+                        <path class="polygon-animation" id="Polygon_3" data-name="Polygon 3" d="M75.5,0,151,145H0Z" transform="translate(1567 362)" fill="#6200ee"/>
+                        <path class="polygon-animation" id="Polygon_4" data-name="Polygon 4" d="M75.5,0,151,150H0Z" transform="translate(1567 655) rotate(-180)" fill="#6200ee"/>
+                        <path class="polygon-animation" id="Polygon_5" data-name="Polygon 5" d="M75.5,0,151,145H0Z" transform="matrix(-1, 0.017, -0.017, -1, 1288.507, 636.671)" fill="#fff"/>
+                        <path class="polygon-animation" id="Polygon_6" data-name="Polygon 6" d="M75.5,0,151,145H0Z" transform="translate(989 356)" fill="#fff"/>
+                      </g>
+                    </svg> 
+            </div>
+        </section>
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit')
+            
+            mobileBtn.addEventListener('click' , () => {
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click' , () => {
+                nav.classList.remove('menu-btn');
+            })
+
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+            var tl= gsap.timeline();
+
+            tl.from('.content', {
+                y: '-30%',
+                opacity: 0,
+                duration: 2,
+                ease: Power4.easeOut
+            }) 
+            tl.from('.stagger1', {
+                opacity: 0,
+                y: -50,
+                stagger: .3,
+                ease: Power4.easeOut,
+                duration: 2
+            }, "-=1.5")
+            tl.from ('.hero-design', {
+                opacity: 0,
+                y: -50,
+                stagger: .3,
+                ease: Power4.easeOut,
+                duration: 1
+            },  "-=2")
+
+            gsap.from ("polygon-animation", {
+                stagger: .2,
+                scale: 0.1,
+                duration: 1,
+                ease: Back.easeOut.config(1.7)
+            })
+
+            gsap.from (".transition2", {
+                scrollTrigger: {
+                    trigger: '.transition2',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                stagger: .3
+            })
+
+            gsap.from (".transition3", {
+                scrollTrigger: {
+                    trigger: '.transition3',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.5,
+                stagger: .3
+            })
+
+            gsap.from (".transition4", {
+                scrollTrigger: {
+                    trigger: '.transition4',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.5,
+                stagger: .3
+            })
+
+            gsap.from (".transition5", {
+                scrollTrigger: {
+                    trigger: '.transition5',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                stagger: .3
+            })
+            gsap.from (".transition6", {
+                scrollTrigger: {
+                    trigger: '.transition6',
+                    start: "top bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.5,
+                stagger: .3
+            })
+
+        </script>
+    </body>
+</html>
