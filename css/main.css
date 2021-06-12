@@ -78,11 +78,10 @@ img {
 }
 
 .hero h1 {
-  font-size: 45px;
+  font-size: 40px;
   margin-bottom: 20px;
   padding-bottom: -5px;
   font-weight: bold;
-  padding-right: 5px
 }
 
 .hero .subhead {
