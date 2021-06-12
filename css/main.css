@@ -78,10 +78,11 @@ img {
 }
 
 .hero .head {
-  font-size: 4px;
+  font-size: 45px;
   margin-bottom: 20px;
   padding-bottom: -5px;
   font-weight: bold;
+  text-align: center;
 }
 
 .hero .subhead {
