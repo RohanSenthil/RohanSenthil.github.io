@@ -68,8 +68,8 @@ img {
 .hero {
   background: #6200EE;
   color: white;
-  display: grid
-  text-align center;
+  display: grid;
+  text-align: center;
   padding: 4em;
 }
 
