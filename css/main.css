@@ -310,7 +310,7 @@ nav li a:hover {
     margin-left: 2em;
   }
   .certificates .certificates-container ul li .certificate-title {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 @media only screen and (min-width: 1050px) {
