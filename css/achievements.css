@@ -185,6 +185,11 @@ section {
   -webkit-text-stroke-color: white;
 }
 
+.certificates .certificates-container ul li .certs2 {
+    width: 20em;
+    height: 16em;
+  }
+
 .articles .subtitle {
   color: #3700B3;
   font-weight: bold;
@@ -371,10 +376,7 @@ nav li a:hover {
     width: 32em;
     height: 18em;
   }
-  .certs2 {
-    width: 25em;
-    height: 25em;
-  }
+
   .certificates .certificates-container ul li .certificate-title {
     color: #000000;
     font-variant: unset;
