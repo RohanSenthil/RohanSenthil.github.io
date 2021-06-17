@@ -174,7 +174,7 @@ section {
         .certificate-title {
             color:#000000;
             font-variant: unset;
-            font-size: 2em;
+            font-size: 1.2em;
             font-style: bolder;
             margin-bottom: -.6em;
             padding-bottom: 1em;
@@ -310,6 +310,17 @@ nav {
         margin-top: 3em;
         margin-left: 2em;
     }
+    .certificate-title {
+        color:#000000;
+        font-variant: unset;
+        font-size: 1.8em;
+        font-style: bolder;
+        margin-bottom: -.6em;
+        padding-bottom: 1em;
+        margin-top: -.5em;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+    }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -372,6 +383,17 @@ nav {
         height: 18em;
     }
 
+    .certificate-title {
+        color:#000000;
+        font-variant: unset;
+        font-size: 2em;
+        font-style: bolder;
+        margin-bottom: -.6em;
+        padding-bottom: 1em;
+        margin-top: -.5em;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+    }
 }
 
 @media only screen and (min-width: 1250px) {
