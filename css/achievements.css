@@ -176,7 +176,7 @@ section {
 .certificates .certificates-container ul li .certificate-title {
   color: #000000;
   font-variant: unset;
-  font-size: 2em;
+  font-size: 1.2em;
   font-style: bolder;
   margin-bottom: -.6em;
   padding-bottom: 1em;
@@ -309,6 +309,18 @@ nav li a:hover {
     margin-top: 3em;
     margin-left: 2em;
   }
+  
+  .certificates .certificates-container ul li .certificate-title {
+  color: #000000;
+  font-variant: unset;
+  font-size: 1.8em;
+  font-style: bolder;
+  margin-bottom: -.6em;
+  padding-bottom: 1em;
+  margin-top: -.5em;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
+  }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -362,6 +374,17 @@ nav li a:hover {
   .certs2 {
     width: 25em;
     height: 25em;
+  }
+  .certificates .certificates-container ul li .certificate-title {
+  color: #000000;
+  font-variant: unset;
+  font-size: 2em;
+  font-style: bolder;
+  margin-bottom: -.6em;
+  padding-bottom: 1em;
+  margin-top: -.5em;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
   }
 }
 
