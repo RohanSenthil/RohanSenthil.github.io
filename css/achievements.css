@@ -327,6 +327,14 @@ nav li a:hover {
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: white;
   }
+   .certs {
+    width: 32em;
+    height: 18em;
+  }
+   .cycert {
+    width: 25em;
+    height: 32em;
+  }
 }
 
 @media only screen and (min-width: 1050px) {
