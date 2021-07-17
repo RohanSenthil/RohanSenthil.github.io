@@ -265,6 +265,12 @@ nav li a:hover {
   height: 1.2em;
 }
 
+.certs {
+  width: 10em;
+  height: 20em;
+
+}
+
 .cycert {
   width: 15em;
   height: 55em;
