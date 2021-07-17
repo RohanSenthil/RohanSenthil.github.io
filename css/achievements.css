@@ -373,7 +373,11 @@ nav li a:hover {
     margin-top: 3em;
     margin-left: 8em;
   }
-
+  .certs {
+    height: auto;  
+    text-align: center;  
+    padding: 15px; 
+  }
   .certificates .certificates-container ul li .certificate-title {
     color: #000000;
     font-variant: unset;
