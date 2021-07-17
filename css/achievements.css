@@ -374,9 +374,12 @@ nav li a:hover {
     margin-left: 8em;
   }
   .certs {
-    height: auto;  
-    text-align: center;  
-    padding: 15px; 
+    width: 32em;
+    height: 18em;
+  }
+  .cycert {
+    width: 25em;
+    height: auto;
   }
   .certificates .certificates-container ul li .certificate-title {
     color: #000000;
