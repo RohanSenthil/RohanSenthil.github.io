@@ -266,9 +266,8 @@ nav li a:hover {
 }
 
 .certs {
-  width: 10em;
-  height: 20em;
-
+  width: 20em;
+  height: 10em;
 }
 
 .cycert {
@@ -386,6 +385,10 @@ nav li a:hover {
   .certs {
     width: 32em;
     height: 18em;
+  }
+  .cycert {
+    width: 15em;
+    height: 55em;
   }
 
   .certificates .certificates-container ul li .certificate-title {
