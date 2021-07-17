@@ -265,15 +265,6 @@ nav li a:hover {
   height: 1.2em;
 }
 
-.certs {
-  width: 20em;
-  height: 10em;
-}
-
-.cycert {
-  width: 15em;
-  height: 55em;
-}
 
 @media only screen and (min-width: 795px) {
   .mobile-menu, .mobile-menu-exit {
@@ -385,10 +376,6 @@ nav li a:hover {
   .certs {
     width: 32em;
     height: 18em;
-  }
-  .cycert {
-    width: 15em;
-    height: 55em;
   }
 
   .certificates .certificates-container ul li .certificate-title {
