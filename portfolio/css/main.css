@@ -152,9 +152,9 @@ section {
 }
 
 .certificates {
-  background-image: url(../images/Image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #fff;
 }
 
 .certificates .subtitle {
