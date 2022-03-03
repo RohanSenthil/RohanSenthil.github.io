@@ -1,281 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap.bundle.min.js"></script>
+        <link href="styles.css" rel="stylesheet">
         <title>Rohan Senthil</title>
-        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div class="navbar">
-            <div class="container">
-                <a class="logo" href="index.html"><img src="images/rslogo.svg" alt="Home"></a>
-                
-                <img id="mobile-cta" class="mobile-menu" src="images/User_Interface-03-512.svg" alt="Open Navigation">
 
-                <nav>
-                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                    <ul class="primary_nav">
-                        <li><a class="title" href="#projects"> <img class="line" src="images/Rectangle 6.svg" alt=""> Projects</a></li>
-                        <li><a class="title" href="#aboutme"> <img class="line" src="images/Rectangle 6.svg" alt=""> About Me</a></li>
-                        <li><a class="title" href="#certificates"> <img class="line" src="images/Rectangle 6.svg" alt=""> Achievements</a></li>
-                        <li><a class="title" href="#articles"> <img class="line" src="images/Rectangle 6.svg" alt=""> Articles</a></li>
-                    </ul>
+    <div class="d-flex justify-content-center">
+        <div class="spinner-grow text-primary" role="status" id="loader">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 
-                    <ul class="social-header">
-                        <li><a href="#"><img src="images/twitterlogo.svg" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="images/iglogo.svg" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="images/utubelogo.svg" alt="Youtube"></a></li>
-                
-                    </ul>
-                </nav>
+    <div id="content">
+
+        <nav class="navbar navbar-dark bg-primary drop-in">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">
+                    <a href="index.html">Rohan Senthil</a>
+                </span>
             </div>
+        </nav>
+
+        <div class="container overflow-hidden">
+
+            <main class="drop-in-2">
+
+                <div class="hero">
+
+                    <h1 id="main-heading">
+                        Hi, I'm Rohan.
+                    </h1>
+
+                    <h3 class="display-3">
+                    <strong class="text-primary"> Cybersecurity </strong>
+                    and
+                    <strong class="text-primary"> Programming </strong>
+                    Enthusiast </h3>
+
+                    <div class="buttons">
+                        <button type="button" class="btn btn-primary">
+                            <a href="portfolio/home.html" target="_blank">Portfolio</a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="https://github.com/RohanSenthil" target="_blank">Github</a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="https://sg.linkedin.com/in/rohan-senthil-665650227"  target="_blank">Linkedin</a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="https://secondarystudyguide.netlify.app/" target="_blank">Secondary Study Guide</a>
+                        </button>
+                    </div>
+
+                    <img src="https://cdn.pixabay.com/photo/2021/11/10/07/29/mountain-6783202_960_720.png">
+
+                </div>
+
+            </main>
+
+            <footer class="drop-in-2">
+                <div class="nav">
+                    <a class="nav-link" href="https://sg.linkedin.com/in/rohan-senthil-665650227" target="_blank">Linkedin
+                        <img src="">
+                    </a>
+                    <a class="nav-link" href="https://github.com/RohanSenthil" target="_blank"> Github
+                        <img src="">
+                    </a>
+                    <a class="nav-link" href="https://www.instagram.com/ro.hannn/" target="_blank">Instagram
+                        <img src="">
+                    </a>
+                </div>
+            </footer>
+
         </div>
 
-        <section class="hero">
-            <div class="content">
-                <h1 class="head stagger1">Cybersecurity Enthusiast</h1>
-                <p class="subhead stagger1"><span style="color:#F70000">Red</span> and <span style="color:#55F6F6">Blue</span></p>
-                <div class="meet stagger1">
-                    <span style= "margin-top: 1em;
-                    margin-right: .5em;">👇</span>
-                    <p>Meet Rohan</p>
-                </div>
-                <svg class="scroll stagger1" width="44" height="94" viewBox="0 0 44 94">
-                    <g id="scroll" transform="translate(-161 -779)">
-                      <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(171 789)" fill="none" stroke="#fff" stroke-width="10">
-                        <rect width="24" height="74" rx="12" stroke="none"/>
-                        <rect x="-5" y="-5" width="34" height="84" rx="17" fill="none"/>
-                      </g>
-                        <ellipse class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="9" cy="15" rx="9" ry="15" transform="translate(174 792)" fill="#fff"/>
-                    </g>
-                  </svg>
-            </div>
-            <svg class="hero-design" width="729" height="299" viewBox="0 0 729 299">
-                <g id="hero" transform="translate(-989 -356)">
-                    <path class="polygon-animation" id="Polygon_2" data-name="Polygon 2" d="M75.5,0,151,145H0Z" transform="translate(1279 358)" fill="#fff"/>
-                    <path class="polygon-animation" id="Polygon_3" data-name="Polygon 3" d="M75.5,0,151,145H0Z" transform="translate(1567 362)" fill="#6200ee"/>
-                    <path class="polygon-animation" id="Polygon_4" data-name="Polygon 4" d="M75.5,0,151,150H0Z" transform="translate(1567 655) rotate(-180)" fill="#6200ee"/>
-                    <path class="polygon-animation" id="Polygon_5" data-name="Polygon 5" d="M75.5,0,151,145H0Z" transform="matrix(-1, 0.017, -0.017, -1, 1288.507, 636.671)" fill="#fff"/>
-                    <path class="polygon-animation" id="Polygon_6" data-name="Polygon 6" d="M75.5,0,151,145H0Z" transform="translate(989 356)" fill="#fff"/>
-                  </g>
-                </svg>                  
-            </div>
-        </section>
-        
-        <section id="projects" class="projects">
-            <div class="projects-container transition2">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="subtitle">Projects</p>
-                        <img class="subtitle-line" src="images/Line 1.svg" alt="">
-                        <p class="featured-title">USB Rubber Ducky</p>
-                        <p class="featured-desc">A seemingly innocent USB drive with the 
-                            ability to act as a keyboard and perform 
-                            keystrokes.</p>
-                        <a href="usbrubberducky.html" class="Read-more">Read More</a>
-                    </div>
-                </div>
-                <img class="right transition2" style="width: 25em; height: 25em; " src="images/rubber_ducky_2000x.svg" alt="USB Rubber Ducky">
-            </div>
-            <div class="projects-container transition3">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="featured-title">Python Keylogger</p>
-                        <p class="featured-desc">A script made in python that logs keystrokes,
-                            and sends them via email.</p>
-                        <a href="keylogger.html" class="Read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-container transition4">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="featured-title">Cryptography Machine</p>
-                        <p class="featured-desc">A simple cryptography system/machine, made in python, that encodes and decodes messages using Caesar cipher.</p>
-                        <a href="cryptography.html" class="Read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="aboutme" class="aboutme">
-            <div class="aboutme-container transition4">
-                <p class="subtitle">About Me</p>
-                <img class="subtitle-line" src="images/Line 1.svg" alt="">
-                <p class="desc">Hi, my name is Rohan. I discovered my passion for cybersecurity and ethical 
-                    hacking when I was young. However, it was only until 2021 that I actively pursued it. Since then, I've explored the many aspects of it and embarked on a couple
-                    of projects as well as gained various basic certifications. I am a strategic thinker with 
-                    effective communication and social skills. I also have an inquisitive mind. I love to
-                    learn new skills and step out of my comfort zone. I believe these are all unique, valuable 
-                    abilities of mine that makes me who I am. Over the years, I've also developed a strong
-                    determination to succeed in all that I do and to constantly pursue excellence.</p>
-            </div>
-        </section>
-        
-        <section id="certificates" class="certificates">
-            <p class="subtitle transition5">Achievements</p>
-            <img class="subtitle-line transition5" src="images/Line 14.svg" alt="">
-            <div class="certificates-container">
-                <ul>
-                    <li class="transition5">
-                        <p id="cert" class="certificate-title">YCEP 2021 Top Player (Top 10)</p>
-                    <li class="transition5">
-                        <p id="cert" class="certificate-title">CISCO Introduction to Cybersecurity Certificate</p>
-                    </li>
-                    <li class="transition5">
-                        <p id="cert" class="certificate-title">CISCO Cybersecurity Essentials Certificate</p>
-                    </li>
-                    <li class="transition5">
-                        <p id="cert" class="certificate-title">Singtel Cyber Security Experience Certificate</p>
-                    </li>
-                    <li class="transition5">
-                        <p id="cert" class="certificate-title">Digital Forensics Certificate of Achievement</p>
-                    </li> 
-                    <li class="transition5">
-                        <p id="cert" class="certificate-title">Cyber Youth Summit 2021 Certificate of Participation</p>
-                    </li>
-                </ul>
-                <a href="achievements.html" class="view transition5">View</a>
-            </div>
-        </section>
-        
-        <section id="articles" class="articles">
-            <div class="left1">
-                <div class="inner transition6">
-                    <p class=subtitle>Articles</p>
-                    <img class="subtitle-line" src="images/Line 1.svg" alt="">
-                    <p class="featured-title">Why you should never save your
-                        passwords in your browsers</p>
-                    <p class="featured-desc">If you only knew how easy it was to steal passwords 
-                        stored in web browsers, you would never save 
-                        them in your web browsers ever again</p>
-                    <a href="browserpass.html" class="Read-more">Read More</a>
-                </div>
-            </div>
-            <img class="right transition6" style="width: 25em; height: 25em; " src="images/browser.svg" alt="Browsers">
-        </section>
+    </div>
 
-        <section class="fotor">
-            <a href="https://github.com/RohanSenthil/RohanSenthil.github.io" class="Read-more">View Code on Github</a>
-            <div class="fotor-design">
-                <svg class="hero-design" width="729" height="299" viewBox="0 0 729 299">
-                    <g id="hero" transform="translate(-989 -356)">
-                        <path class="polygon-animation" id="Polygon_2" data-name="Polygon 2" d="M75.5,0,151,145H0Z" transform="translate(1279 358)" fill="#fff"/>
-                        <path class="polygon-animation" id="Polygon_3" data-name="Polygon 3" d="M75.5,0,151,145H0Z" transform="translate(1567 362)" fill="#6200ee"/>
-                        <path class="polygon-animation" id="Polygon_4" data-name="Polygon 4" d="M75.5,0,151,150H0Z" transform="translate(1567 655) rotate(-180)" fill="#6200ee"/>
-                        <path class="polygon-animation" id="Polygon_5" data-name="Polygon 5" d="M75.5,0,151,145H0Z" transform="matrix(-1, 0.017, -0.017, -1, 1288.507, 636.671)" fill="#fff"/>
-                        <path class="polygon-animation" id="Polygon_6" data-name="Polygon 6" d="M75.5,0,151,145H0Z" transform="translate(989 356)" fill="#fff"/>
-                      </g>
-                    </svg> 
-            </div>
-        </section>
-
-        <script>
-
-            const mobileBtn = document.getElementById('mobile-cta')
-                nav = document.querySelector('nav')
-                mobileBtnExit = document.getElementById('mobile-exit')
-            
-            mobileBtn.addEventListener('click' , () => {
-                nav.classList.add('menu-btn');
-            })
-
-            mobileBtnExit.addEventListener('click' , () => {
-                nav.classList.remove('menu-btn');
-            })
-
-        </script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
-
-        <script>
-            gsap.registerPlugin(ScrollTrigger);
-            var tl= gsap.timeline();
-
-            tl.from('.content', {
-                y: '-30%',
-                opacity: 0,
-                duration: 2,
-                ease: Power4.easeOut
-            }) 
-            tl.from('.stagger1', {
-                opacity: 0,
-                y: -50,
-                stagger: .3,
-                ease: Power4.easeOut,
-                duration: 2
-            }, "-=1.5")
-            tl.from ('.hero-design', {
-                opacity: 0,
-                y: -50,
-                stagger: .3,
-                ease: Power4.easeOut,
-                duration: 1
-            },  "-=2")
-
-            gsap.from ("polygon-animation", {
-                stagger: .2,
-                scale: 0.1,
-                duration: 1,
-                ease: Back.easeOut.config(1.7)
-            })
-
-            gsap.from (".transition2", {
-                scrollTrigger: {
-                    trigger: '.transition2',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: .3
-            })
-
-            gsap.from (".transition3", {
-                scrollTrigger: {
-                    trigger: '.transition3',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.5,
-                stagger: .3
-            })
-
-            gsap.from (".transition4", {
-                scrollTrigger: {
-                    trigger: '.transition4',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.5,
-                stagger: .3
-            })
-
-            gsap.from (".transition5", {
-                scrollTrigger: {
-                    trigger: '.transition5',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: .3
-            })
-            gsap.from (".transition6", {
-                scrollTrigger: {
-                    trigger: '.transition6',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 2,
-                stagger: .5
-            })
-        </script>
     </body>
 </html>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(showPage, 2000);
+    });
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }
+
+</script>

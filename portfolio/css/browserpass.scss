@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    height: 100vp;
+    margin: 0;
+    font-family: 'Poppins', arial; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
+.navbar, .container {
+    background: #6109E0;
+
+    a{
+        color: white;
+        padding: 1em;
+        
+    }
+
+    .logo {
+        img {
+            width: 145px;
+            height: 95px;
+        }
+    }
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+        background: white;
+        width: 135px;
+        height: 135px;
+
+    }
+    .social-header {
+        display: none;
+    }
+}
+
+.hero {
+    background: #6200EE;
+    color:white;
+    display: grid
+    text-align center;
+    padding: 4em;
+
+    .hero-design {
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        padding-bottom: -5px;
+        font-weight: bold;
+    }
+    
+    .subhead {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .meet {
+        display: flex;
+        margin: 0 auto;
+        width: 9em;
+        font-weight: bold;
+        color: #FF64CB
+
+    }
+
+    .scroll {
+        width: 30px;
+        margin-top: 0.5em;
+        margin-right: 1em;
+        border-width: 5px;
+    }
+}
+
+section {
+   padding: 4em 2em;
+   text-align: center;
+}
+
+.projects {
+    .subtitle {
+        color: #3700B3;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: -.6em;
+        padding-bottom: 1em;
+        display: block;
+    }
+    .subtitle-line {
+        width: 7em;
+        height: .5em;
+        margin-top: -10em;
+        margin-bottom: 1em;
+        
+ 
+    }
+    .featured-title {
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-top: .7em;
+    }
+   
+}
+
+.featured-desc {
+    font-size: 1em;
+    margin-top: .7em;
+}
+
+.aboutme {
+    background: #6200EE;
+    .subtitle {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: -.6em;
+        padding-bottom: 1em;
+        display: block;
+        margin-top: -.5em;
+    }
+    .subtitle-line {
+        width: 7em;
+        height: .5em;
+        margin-top: -10em;
+        margin-bottom: 1em; 
+    }
+    .desc {
+        color: #ffffff;
+        margin-top: .7em;
+        margin-bottom: .5em
+    }
+}
+
+.certificates {
+    background-image: url(../images/Image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .subtitle {
+        color: #3700B3;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: -.6em;
+        padding-bottom: 1em;
+        display: block;
+        margin-top: -.5em;
+    }
+    .subtitle-line {
+        width: 7em;
+        height: .5em;
+        margin-top: -10em;
+        margin-bottom: 1em;
+    }
+   
+    .certificates-container ul li {
+
+        .certificate-title {
+            color:#000000;
+            font-variant: unset;
+            font-size: 1em;
+            margin-bottom: -.6em;
+            padding-bottom: 1em;
+            margin-top: -.5em;
+            -webkit-text-stroke-width: .0px;
+            -webkit-text-stroke-color: rgb(255, 255, 255);
+
+        }
+     }
+}
+
+.articles {
+    .subtitle {
+        color: #3700B3;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: -.6em;
+        padding-bottom: 1em;
+        display: block;
+    }
+    .subtitle-line {
+        width: 7em;
+        height: .5em;
+        margin-top: -10em;
+        margin-bottom: 1em;
+        
+ 
+    }
+    .featured-title {
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-top: .7em;
+    }
+}
+
+.fotor{
+    background-color: #6200EE;
+    .fotor-design{
+        display: none;
+    }
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    .line{
+       display: none;
+    }
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+
+        a{
+            color: white
+            text-decoration none;
+            display: block;
+            padding: .5em;
+            margin-top: 1em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.video1 {
+    width: 25em;
+    height: 20em;
+}
+
+.featured-end {
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-right: 1.3em;
+    margin-left: 1.3em
+}
+
+@media only screen and (min-width: 795px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+    }
+    .video1 {
+        width: 40em;
+        height: 25em;
+    }
+    
+}
+
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 90vh;
+    }
+
+
+    section {
+        padding: 4em;
+    }
+
+    .video1 {
+        width: 45em;
+        height: 30em;
+    }
+    
+}
+
+@media only screen and (min-width: 1250px) {
+    .right {
+        margin-top: 3em;
+        margin-left: 15em;
+    }
+
+    .left1, .projects-left {
+        margin-left: 3em
+        
+    }
+
+    .featured-desc {
+        line-height: 1.2em;
+    }
+    .projects, .articles {
+        .featured-title {
+            font-size: 2em;
+            line-height: 1em;
+        }
+        .subtitle-line {
+            margin-left: 0em
+        }
+        .subtitle{
+            font-size: 1.3em;
+            margin-bottom: -0.8em;
+        }
+    }
+    .video1 {
+        width: 50em;
+        height: 30em;
+    }
+    
+}
+
+
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(174px, 792px);
+        z-index: 5;
+    }
+    to {
+        transform: translate(174px, 830px);
+    }
+}
