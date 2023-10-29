@@ -1,334 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rohan Senthil</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <div class="navbar">
-            <div class="container">
-                <a class="logo" href="home.html"><img src="images/rslogo.svg" alt="Home"></a>
-                
-                <img id="mobile-cta" class="mobile-menu" src="images/User_Interface-03-512.svg" alt="Open Navigation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Rohan Senthil</title>
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+<body>
 
-                <nav>
-                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                    <ul class="primary_nav">
-                        <li><a class="title" href="#projects"> <img class="line" src="images/Rectangle 6.svg" alt=""> Projects</a></li>
-                        <li><a class="title" href="#aboutme"> <img class="line" src="images/Rectangle 6.svg" alt=""> About Me</a></li>
-                        <li><a class="title" href="#certificates"> <img class="line" src="images/Rectangle 6.svg" alt=""> Achievements</a></li>
-                        <li><a class="title" href="#articles"> <img class="line" src="images/Rectangle 6.svg" alt=""> Articles</a></li>
-                    </ul>
+    <div class="navbar">
+        <div class="navlist">
+            <p><a href="#" class="NavText">Experience</a></p>
+            <p><a href="#" class="NavText">Projects</a></p>
+            <p><img class="logo" src="assets/logo.svg"></p>
+            <p><a href="#" class="NavText">Certifications</a></p>
+            <p><a href="#" class="NavText">Education</a></p>
+        </div>
+    </div>
 
-                    <ul class="social-header">
-                        <li><a href="#"><img src="images/twitterlogo.svg" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="images/iglogo.svg" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="images/utubelogo.svg" alt="Youtube"></a></li>
-                
-                    </ul>
-                </nav>
+    <div class="hero">
+        <div class="wrapper-sphere">
+            <div class="sphere">
+              <div class="equator"></div>
+              <div class="tropic cancer"></div>
+              <div class="tropic capricorn"></div>
             </div>
         </div>
+        <div class="wrapper">
+            <h1 class="typing">Hi, I'm Rohan.</h1>
+        </div>
+        <div class="scroll">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+          </div>
+    </div>
+    
+    <script src="home.js"></script>
 
-        <section class="hero">
-            <div class="content">
-                <h1 class="head stagger1">Exploring Endless Possibilities</h1>
-                <p class="subhead stagger1"><span style="color:#F70000">Cybersecurity</span> and <span style="color:#55F6F6">Programming</span></p>
-                <div class="meet stagger1">
-                    <span style= "margin-top: 1em;
-                    margin-right: .5em;">👇</span>
-                    <p>Meet Rohan</p>
-                </div>
-                <svg class="scroll stagger1" width="44" height="94" viewBox="0 0 44 94">
-                    <g id="scroll" transform="translate(-161 -779)">
-                      <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(171 789)" fill="none" stroke="#fff" stroke-width="10">
-                        <rect width="24" height="74" rx="12" stroke="none"/>
-                        <rect x="-5" y="-5" width="34" height="84" rx="17" fill="none"/>
-                      </g>
-                        <ellipse class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="9" cy="15" rx="9" ry="15" transform="translate(174 792)" fill="#fff"/>
-                    </g>
-                  </svg>
-            </div>
-            <svg class="hero-design" width="729" height="299" viewBox="0 0 729 299">
-                <g id="hero" transform="translate(-989 -356)">
-                    <path class="polygon-animation" id="Polygon_2" data-name="Polygon 2" d="M75.5,0,151,145H0Z" transform="translate(1279 358)" fill="#fff"/>
-                    <path class="polygon-animation" id="Polygon_3" data-name="Polygon 3" d="M75.5,0,151,145H0Z" transform="translate(1567 362)" fill="#6200ee"/>
-                    <path class="polygon-animation" id="Polygon_4" data-name="Polygon 4" d="M75.5,0,151,150H0Z" transform="translate(1567 655) rotate(-180)" fill="#6200ee"/>
-                    <path class="polygon-animation" id="Polygon_5" data-name="Polygon 5" d="M75.5,0,151,145H0Z" transform="matrix(-1, 0.017, -0.017, -1, 1288.507, 636.671)" fill="#fff"/>
-                    <path class="polygon-animation" id="Polygon_6" data-name="Polygon 6" d="M75.5,0,151,145H0Z" transform="translate(989 356)" fill="#fff"/>
-                  </g>
-                </svg>                  
-            </div>
-        </section>
-        
-        <section id="projects" class="projects" style="margin-top: 5rem;">
-            <div class="projects-container transition2">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="subtitle">Projects</p>
-                        <img class="subtitle-line" src="images/Line 1.svg" alt="">
-                        <p class="featured-title">The Watcher</p>
-                        <p class="featured-desc">The Watcher is an advanced discord chat moderation bot with capabilities such as anti-spam, 
-                            chat filtering, and most notably an <strong>anti-phishing system</strong>.
-                        </p>
-                        <a href="https://thewatcherbot.netlify.app" target="_blank" class="Read-more">View</a>
-                    </div>
-                </div>
-                <img class="right transition2" style="width: 20em; height: 20em; " src="images/theWatcherIcon.png" alt="USB Rubber Ducky">
-            </div>
-            <div class="projects-container transition2-1">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="featured-title">USB Rubber Ducky</p>
-                        <p class="featured-desc">A seemingly innocent USB drive with the 
-                            ability to act as a keyboard and perform 
-                            keystrokes.</p>
-                        <a href="usbrubberducky.html" class="Read-more">View</a>
-                    </div>
-                </div>
-                <img class="right transition2" style="width: 20em; height: 20em; " src="images/rubber_ducky_2000x.svg" alt="USB Rubber Ducky">
-            </div>
-            <div class="projects-container transition2-1">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="featured-title">SwiftEdit.py</p>
-                        <p class="featured-desc">Python file editing tool to automate replacing, concatenating or removing all instances of a certain string/text.</p>
-                        <a href="https://github.com/RohanSenthil/SwiftEdit.py" target="_blank" class="Read-more">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-container transition3">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="featured-title">Python Keylogger</p>
-                        <p class="featured-desc">A script made in python that logs keystrokes,
-                            and sends them via email.</p>
-                        <a href="keylogger.html" class="Read-more">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-container transition4">
-                <div class="projects-left">
-                    <div class="inner">
-                        <p class="featured-title">Cryptography Machine</p>
-                        <p class="featured-desc">A simple cryptography system/machine, made in python, that encodes and decodes messages using Caesar cipher.</p>
-                        <a href="cryptography.html" class="Read-more">View</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="aboutme" class="aboutme">
-            <div class="aboutme-container transition4">
-                <p class="subtitle">About Me</p>
-                <img class="subtitle-line" src="images/Line 1.svg" alt="">
-                <p class="desc">Hi, my name is Rohan. I discovered my passion for cybersecurity and ethical hacking when I was young. However, it was only until 2021 that I actively pursued it. Since then, I've explored the many aspects of it and embarked on a couple of projects as well as gained various basic certifications. Through this journey of exploring, I have also developed a strong interest in programming and how I can use it to solve many of the problems I face. I am a strategic thinker with effective communication and social skills. I also have an inquisitive mind. I love to learn new skills and step out of my comfort zone. I believe these are all unique, valuable abilities of mine that makes me who I am. Over the years, I've also developed a strong determination to succeed in all that I do and to constantly pursue excellence.</p>
-            </div>
-        </section>
-        
-        <section id="certificates" class="certificates">
-            <p class="subtitle transition5">Achievements</p>
-            <img class="subtitle-line transition5" src="images/Line 1.svg" alt="">
-            <div class="certificates-container">
-                <div class="cards">
-                    <div class="card transition5">
-                        <img src="images/10.Rohan-cert.png" alt="">
-                        <p id="cert" class="certificate-title">Advanced YCEP 2021 Top Player (Top 10)</p>
-                    </div>
-                    <div class="card transition5">
-                        <img src="images/medalfront.jpg" alt="">
-                        <p id="cert" class="certificate-title">YCEP 2021 Top Player (Top 10)</p>
-                    </div>
-                    <div class="card transition5">
-                        <a href="https://cs50.harvard.edu/certificates/a4a1bebd-b724-4fe4-9fe2-d2805d49227d" target="_blank">
-                            <img src="images/CS50x - Copy.png" alt="">
-                        </a>
-                        <p id="cert" class="certificate-title">Harvard's CS50x</p>
-                    </div>
-                    <div class="card transition5">
-                        <a href="https://freecodecamp.org/certification/fcc5db9e72c-7800-4efd-8fd5-50e662d6cc02/scientific-computing-with-python-v7" target="_blank">
-                            <img src="images/fcc_scientific_computing_python.PNG" alt="">
-                        </a>
-                        <p id="cert" class="certificate-title">Scientific Computing with Python</p>
-                    </div>
-                    <div class="card transition5">
-                        <a href="https://ude.my/UC-95e230ff-80a4-4886-8a08-e4397c79db0f" target="_blank">
-                            <img src="images/Ethical_Hacking_For_Beginners.jpg" alt="">
-                        </a>
-                        <p id="cert" class="certificate-title">Ethical Hacking for Beginners</p>
-                    </div>
-                    <div class="card transition5">
-                        <img src="images/Image 4.png" alt="">
-                        <p id="cert" class="certificate-title">CISCO Cybersecurity Essentials Certificate</p>
-                    </div>
-                    <div class="card transition5">
-                        <img src="images/Image 5.png" alt="">
-                        <p id="cert" class="certificate-title">Singtel Cyber Security Experience Certificate</p>
-                    </div>
-                    <div class="card transition5">
-                        <img src="images/Image 10.png" alt="">
-                        <p id="cert" class="certificate-title">Digital Forensics Certificate of Achievement</p>
-                    </div> 
-                    <div class="card transition5">
-                        <img src="images/AOC_cert.png" alt="">
-                        <p id="cert" class="certificate-title">TryHackMe Advent of Cyber 3 Completion</p>
-                    </div> 
-                    <div class="card transition5">
-                        <img src="images/Image 11.svg" alt="">
-                        <p id="cert" class="certificate-title">Cyber Youth Summit 2021 Certificate of Participation</p>
-                    </div>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="articles" class="articles">
-            <div class="left1">
-                <div class="inner transition6">
-                    <p class=subtitle>Articles</p>
-                    <img class="subtitle-line" src="images/Line 1.svg" alt="">
-                    <p class="featured-title">Why you should never save your
-                        passwords in your browsers</p>
-                    <p class="featured-desc">If you only knew how easy it was to steal passwords 
-                        stored in web browsers, you would never save 
-                        them in your web browsers ever again</p>
-                    <a href="browserpass.html" class="Read-more">Read More</a>
-                </div>
-            </div>
-            <img class="right transition6" style="width: 25em; height: 25em; " src="images/browser.svg" alt="Browsers">
-        </section>
-
-        <section class="fotor">
-            <div class="fotor-design">
-                <svg class="hero-design" width="729" height="299" viewBox="0 0 729 299">
-                    <g id="hero" transform="translate(-989 -356)">
-                        <path class="polygon-animation" id="Polygon_2" data-name="Polygon 2" d="M75.5,0,151,145H0Z" transform="translate(1279 358)" fill="#fff"/>
-                        <path class="polygon-animation" id="Polygon_3" data-name="Polygon 3" d="M75.5,0,151,145H0Z" transform="translate(1567 362)" fill="#6200ee"/>
-                        <path class="polygon-animation" id="Polygon_4" data-name="Polygon 4" d="M75.5,0,151,150H0Z" transform="translate(1567 655) rotate(-180)" fill="#6200ee"/>
-                        <path class="polygon-animation" id="Polygon_5" data-name="Polygon 5" d="M75.5,0,151,145H0Z" transform="matrix(-1, 0.017, -0.017, -1, 1288.507, 636.671)" fill="#fff"/>
-                        <path class="polygon-animation" id="Polygon_6" data-name="Polygon 6" d="M75.5,0,151,145H0Z" transform="translate(989 356)" fill="#fff"/>
-                      </g>
-                    </svg> 
-            </div>
-        </section>
-
-        <script>
-
-            const mobileBtn = document.getElementById('mobile-cta')
-                nav = document.querySelector('nav')
-                mobileBtnExit = document.getElementById('mobile-exit')
-            
-            mobileBtn.addEventListener('click' , () => {
-                nav.classList.add('menu-btn');
-            })
-
-            mobileBtnExit.addEventListener('click' , () => {
-                nav.classList.remove('menu-btn');
-            })
-
-        </script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
-
-        <script>
-            gsap.registerPlugin(ScrollTrigger);
-            var tl= gsap.timeline();
-
-            tl.from('.content', {
-                y: '-30%',
-                opacity: 0,
-                duration: 2,
-                ease: Power4.easeOut
-            }) 
-            tl.from('.stagger1', {
-                opacity: 0,
-                y: -50,
-                stagger: .3,
-                ease: Power4.easeOut,
-                duration: 2
-            }, "-=1.5")
-            tl.from ('.hero-design', {
-                opacity: 0,
-                y: -50,
-                stagger: .3,
-                ease: Power4.easeOut,
-                duration: 1
-            },  "-=2")
-
-            gsap.from ("polygon-animation", {
-                stagger: .2,
-                scale: 0.1,
-                duration: 1,
-                ease: Back.easeOut.config(1.7)
-            })
-
-            gsap.from (".transition2", {
-                scrollTrigger: {
-                    trigger: '.transition2',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: .3
-            })
-
-            gsap.from (".transition2-1", {
-                scrollTrigger: {
-                    trigger: '.transition2',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.3,
-                stagger: .3
-            })
-
-            gsap.from (".transition3", {
-                scrollTrigger: {
-                    trigger: '.transition3',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.5,
-                stagger: .3
-            })
-
-            gsap.from (".transition4", {
-                scrollTrigger: {
-                    trigger: '.transition4',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.6,
-                stagger: .3
-            })
-
-            gsap.from (".transition5", {
-                scrollTrigger: {
-                    trigger: '.transition5',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: .3
-            })
-            gsap.from (".transition6", {
-                scrollTrigger: {
-                    trigger: '.transition6',
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 2,
-                stagger: .5
-            })
-        </script>
-    </body>
+</body>
 </html>
