@@ -236,6 +236,7 @@ div.capricorn {
     font-family: inherit;
     font-size: 1.25rem;
     cursor: pointer;
+    position: relative;
 }
 
 .sub-heading {
@@ -313,7 +314,7 @@ div.capricorn {
     background: linear-gradient(transparent, #54C5F4);
 }
 
-.card a {
+.card a, button a {
     position: absolute;
     top: 0;
     left: 0;
@@ -387,7 +388,7 @@ div.capricorn {
     margin: 0 auto;
 }
 
-.testimonial-cards button{
+.testimonial-cards button {
     width: 100px;
     margin: 0 auto;
     padding: .5rem;
@@ -399,6 +400,7 @@ div.capricorn {
     font-size: .75rem;
     cursor: pointer;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 footer {
