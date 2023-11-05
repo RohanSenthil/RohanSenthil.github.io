@@ -8,6 +8,10 @@ body {
     max-width: 750px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     width: 90%;
     height: 100%;
@@ -220,3 +224,185 @@ div.capricorn {
  }
 }
 /* Arrow Animation End*/
+
+.resume {
+    width: 100px;
+    margin: 0 auto;
+    padding: .5rem;
+    background: linear-gradient(135deg, #376896, #A8A0E8);
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    font-family: inherit;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.sub-heading {
+    font-family: monospace;
+    color: #54C5F4;
+    background: #376896;
+    background: -webkit-linear-gradient(135deg, #376896, #A8A0E8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 12rem;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about p {
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.4rem;
+}
+
+#about a {
+    margin: 0 auto;
+}
+
+#linkedin {
+    fill: #54C5F4;
+    margin-top: 2rem;
+}
+
+.cards-container {
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 275px;
+    height: 175px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 300ms;
+    font-family: inherit;
+    margin: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card .content {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    padding: 40px 20px 20px 20px;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(transparent, #54C5F4);
+}
+
+.card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    font-size: 0;
+}
+
+.card .date,
+.card .title {
+    margin: 0;
+}
+
+.card .date {
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.card .title {
+    font-size: 17px;
+    color: #000;
+}
+
+.projects-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.project-desc h2 {
+    font-family: monospace;
+    color: #54C5F4;
+}
+
+.project-desc .desc {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.project-desc .desc a {
+    margin-top: 1rem;
+    color: #A8A0E8;
+}
+
+.project-desc img {
+    max-width: 200px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimony-card {
+    padding: .75rem 1.25rem;
+    font-family: monospace;
+    color: #54C5F4;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.testimonial-cards button{
+    width: 100px;
+    margin: 0 auto;
+    padding: .5rem;
+    background: linear-gradient(135deg, #376896, #A8A0E8);
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    font-family: inherit;
+    font-size: .75rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    color: #948d94;
+}
