@@ -405,4 +405,31 @@ footer {
     margin-top: 12rem;
     margin-bottom: 3rem;
     color: #948d94;
+    margin-left: 2rem;
+}
+
+@media (max-width: 800px) {
+    #about p {
+        padding: 3rem;
+    }
+
+    .NavText {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-desc {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .project-desc img {
+        display: none;
+    }
+
+    .project-desc:nth-child(2) {
+        margin-top: 3rem;
+    }
 }
