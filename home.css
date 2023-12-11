@@ -146,7 +146,8 @@ div.capricorn {
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    height: 100vh;
+    margin-top: 2rem;
 }
 
 .hero div {
@@ -165,7 +166,7 @@ div.capricorn {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 0;
+    margin-top: 5rem;
 }
 
 .chevron {
@@ -259,19 +260,33 @@ div.capricorn {
     justify-content: center;
 }
 
+#about .sub-heading {
+    margin-top: 0rem;
+}
+
 #about p {
     text-align: justify;
     text-align-last: center;
     line-height: 1.4rem;
 }
 
-#about a {
-    margin: 0 auto;
-}
-
 #linkedin {
     fill: #54C5F4;
+}
+
+#github {
+    fill: #fff;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 2rem;
+}
+
+.icons a {
+    margin: 1rem;
 }
 
 .cards-container {
@@ -420,6 +435,12 @@ footer {
     margin-bottom: 3rem;
     color: #948d94;
     margin-left: 2rem;
+}
+
+@media (min-width: 1000px) {
+    body {
+        max-width: 950px;
+    }
 }
 
 @media (max-width: 800px) {
