@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Rohan Senthil</title>
+    </head>
+    <body>
+
+    <div class="d-flex justify-content-center">
+        <div class="spinner-grow text-primary" role="status" id="loader">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <nav class="navbar navbar-dark bg-primary drop-in">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">
+                    <a href="index.html">Rohan Senthil</a>
+                </span>
+            </div>
+        </nav>
+
+        <div class="container overflow-hidden">
+
+            <main class="drop-in-2">
+
+                <div class="hero">
+
+                    <h1 id="main-heading">
+                        Hi, I'm Rohan.
+                    </h1>
+
+                    <h3 class="display-3">
+                    <strong class="text-primary"> Cybersecurity </strong>
+                    and
+                    <strong class="text-primary"> Programming </strong>
+                    Enthusiast </h3>
+
+                    <div class="buttons">
+                        <button type="button" class="btn btn-primary">
+                            <a href="portfolio/home.html" target="_blank">Portfolio</a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="https://thewatcherbot.netlify.app/" target="_blank">The Watcher</a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="https://github.com/RohanSenthil/CTF-Writeups" target="_blank">CTF Writeups</a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="https://secondarystudyguide.netlify.app/" target="_blank">Secondary Study Guide</a>
+                        </button>
+                    </div>
+
+                    <img src="mountain.png">
+
+                </div>
+
+            </main>
+
+            <footer class="drop-in-2">
+                <div class="nav">
+                    <a class="nav-link" href="https://sg.linkedin.com/in/rohan-senthil-665650227" target="_blank">LinkedIn
+                        <img src="">
+                    </a>
+                    <a class="nav-link" href="https://github.com/RohanSenthil" target="_blank"> Github
+                        <img src="">
+                    </a>
+                    <a class="nav-link" href="https://www.instagram.com/ro.hannn/" target="_blank">Instagram
+                        <img src="">
+                    </a>
+                    <a class="nav-link" href="https://www.patreon.com/rohansenthil/membership" target="_blank">Patreon
+                        <img src="">
+                    </a>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    </body>
+</html>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(showPage, 2000);
+    });
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }
+
+</script>
