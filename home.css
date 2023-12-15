@@ -437,12 +437,6 @@ footer {
     margin-left: 2rem;
 }
 
-@media (min-width: 1200px) {
-    body {
-        max-width: 1050px!important;
-    }
-}
-
 @media (min-width: 1000px) {
     body {
         max-width: 950px;
@@ -450,6 +444,18 @@ footer {
 
     .sub-heading {
         font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 1050px;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        max-width: 1250px;
     }
 }
 
