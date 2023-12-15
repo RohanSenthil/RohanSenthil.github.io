@@ -13,13 +13,17 @@ html {
 }
 
 .navbar {
-    width: 90%;
+    width: 100%;
     height: 100%;
     background: #11121a;
     border-top: none;
     border-right: none;
     border-left: none;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
 }
 
 .navbar .logo {
@@ -459,13 +463,50 @@ footer {
     }
 }
 
+.menu-icon {
+    display: none;
+}
+
+.menu-icon svg {
+    fill: #fff;
+    width: 36px;
+}
+
+#menu-close {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
 @media (max-width: 800px) {
     #about p {
         padding: 3rem;
     }
 
-    .NavText {
+    .big .NavText {
         display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navlist {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navlist p {
+        margin-bottom: 5px;
+    }
+
+    .navlist .logop {
+        margin: 0 auto;
+        margin-left: calc(50% - 36px);
+        transform: translateX(-50%);
     }
 
     .testimonial-cards {
