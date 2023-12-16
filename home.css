@@ -407,6 +407,7 @@ div.capricorn {
     max-width: 450px;
     margin: 0 auto;
     font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .testimonial-cards button {
@@ -478,6 +479,18 @@ footer {
     body {
         max-width: 1250px;
     }
+}
+
+@media (min-width: 1800px) {
+
+    .testimony-card p {
+        font-size: 1rem;
+    }
+    
+    .testimony-card p span {
+        font-size: .9rem;
+    }
+
 }
 
 .menu-icon {
