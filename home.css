@@ -447,6 +447,7 @@ footer {
     margin-bottom: 2rem;
 }
 
+
 @media (min-width: 1000px) {
     body {
         max-width: 950px;
@@ -508,6 +509,7 @@ footer {
 
 .dropdown-content {
     display: none;
+    padding: 1.5rem;
 }
 
 @media (max-width: 800px) {
@@ -542,6 +544,14 @@ footer {
     .testimonial-cards {
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .small {
+        padding: 0px;
+    }
+
+    html {
+        scroll-padding-top: 320px;
     }
 }
 
